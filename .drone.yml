@@ -1,0 +1,9 @@
+kind: pipeline
+name: default
+
+steps:
+- name: all
+  image: java
+  commands:
+  - mvn clean
+  - mvn package -Dmaven.test.skip=true
